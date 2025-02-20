@@ -189,7 +189,7 @@ public class MusicOrganizer
         int sum = 0;
         int number = a ; 
         while (number<=b){
-         sum += number;
+         sum = sum + number;
          number++;
         }
         
@@ -203,12 +203,24 @@ public class MusicOrganizer
         int number = 1;
         
         while (number <= 10) {
-            sum += number;
+            sum = sum + number;
             number++;
         }
         
         System.out.println("the sum of values from 1 to 10 is:"+sum);
     }
+    
+    public boolean isPrime(int n){
+    int i = 2;
+    
+        while (i < n){
+            if (n%i == 0) {
+                return false; 
+        }
+        i++;
+      }
+    return true;
+}
 }
 
 
